@@ -1,2 +1,4 @@
 .vscode/launch.json
 **.pyc
+.vscode/settings.json
+*.bat
