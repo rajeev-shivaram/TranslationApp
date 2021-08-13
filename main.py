@@ -1,9 +1,8 @@
 """Translation App Endpoints."""
 
-# import translation_app
-import translation_service
 from flask import Flask, request
 
+from language_translation import translation_service
 
 app = Flask("Language Translation")
 
@@ -22,3 +21,7 @@ def translate_fr2eng():
     text = request.form["text"]
     result = translation_service.french_to_english(text)
     return {"text": text, "translated": result}
+
+
+if __name__ == '__main__':
+    app.run(port=5555)
