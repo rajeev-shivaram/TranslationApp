@@ -10,5 +10,5 @@
 - [X]  4pt - Run unit tests and interpret the results.
 - [X]  2pt - Package the above functions and tests as a standard python package.
 - [X]  4pt - Import the package in the server code and provide translation endpoints.
-- [ ]  1pt - Check English to French translation
-- [ ]  1pt - Check French to English translation
+- [X]  1pt - Check English to French translation
+- [X]  1pt - Check French to English translation
