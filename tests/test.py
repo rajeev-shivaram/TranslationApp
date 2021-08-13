@@ -26,7 +26,6 @@ class TestLanguageService(unittest.TestCase):
         self.assertNotEqual(english_to_french(self.english1), self.french2)
         self.assertNotEqual(english_to_french(self.english2), self.french1)
 
-
     def test_french_to_english(self):
         """Test french_to_english."""
         self.assertEqual(french_to_english(self.french1), self.english1)
