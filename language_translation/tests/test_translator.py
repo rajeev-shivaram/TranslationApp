@@ -1,8 +1,8 @@
-"""Tests for translation_service."""
+"""Tests for translator."""
 
 import unittest
 
-from language_translation.translation_service import english_to_french, french_to_english
+from language_translation.translator import english_to_french, french_to_english
 
 
 class TestLanguageService(unittest.TestCase):

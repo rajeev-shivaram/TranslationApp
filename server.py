@@ -2,7 +2,7 @@
 
 from flask import Flask, request
 
-from language_translation import translation_service
+from language_translation import translator
 
 app = Flask("Language Translation")
 
@@ -17,7 +17,7 @@ def hello():
 def translate_eng2fr():
     """Translate English to French by calling translation service API"""
     text = request.form["text"]
-    result = translation_service.english_to_french(text)
+    result = translator.english_to_french(text)
     return {"text": text, "translated": result}
 
 
@@ -25,7 +25,7 @@ def translate_eng2fr():
 def translate_fr2eng():
     """Translate French to English by calling translation service API"""
     text = request.form["text"]
-    result = translation_service.french_to_english(text)
+    result = translator.french_to_english(text)
     return {"text": text, "translated": result}
 
 

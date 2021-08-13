@@ -4,7 +4,7 @@ import os
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson import ApiException, LanguageTranslatorV3
 
-URL_LT = os.environ.get("url_lt")
+URL_LT = os.environ.get("url_lt", "")
 APIKEY_LT = os.environ.get("apikey_lt")
 VERSION_LT = "2018-05-01"
 
@@ -12,9 +12,7 @@ VERSION_LT = "2018-05-01"
 def get_language_translator() -> LanguageTranslatorV3:
     """create a Language transaltion model"""
     authenticator = IAMAuthenticator(APIKEY_LT)
-    language_translator = LanguageTranslatorV3(
-        version=VERSION_LT, authenticator=authenticator
-    )
+    language_translator = LanguageTranslatorV3(version=VERSION_LT, authenticator=authenticator)
     language_translator.set_service_url(URL_LT)
     return language_translator
 
