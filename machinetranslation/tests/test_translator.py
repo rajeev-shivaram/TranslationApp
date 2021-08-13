@@ -2,8 +2,7 @@
 
 import unittest
 
-from language_translation.translator import (english_to_french,
-                                             french_to_english)
+from machinetranslation.translator import english_to_french, french_to_english
 
 
 class TestLanguageService(unittest.TestCase):

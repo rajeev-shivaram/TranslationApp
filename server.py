@@ -2,7 +2,7 @@
 
 from flask import Flask, request
 
-from language_translation import translator
+from machinetranslation import translator
 
 app = Flask("Language Translation")
 
