@@ -2,7 +2,7 @@
 
 from ibm_watson import ApiException
 
-from watson_translation_service import LANGUAGE_TRANSLATOR
+from translation_service import LANGUAGE_TRANSLATOR
 
 
 def english_to_french(english_text: str) -> str:
