@@ -12,6 +12,7 @@ def hello():
     """Status."""
     return {"status": "up"}
 
+
 @app.route("/eng2fr", methods=["POST"])
 def translate_eng2fr():
     """Translate English to French by calling translation service API"""
@@ -29,4 +30,4 @@ def translate_fr2eng():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5555)
+    app.run(host="0.0.0.0", port=80)
